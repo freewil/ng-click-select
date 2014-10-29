@@ -5,15 +5,7 @@
  * @url https://github.com/adjohnson916/ng-click-select
  * @license MIT
  */
-(function(angular, factory) {
-  if (typeof define === 'function' && define.amd) {
-    define(['angular'], function(angular) {
-      return factory(angular);
-    });
-  } else {
-    return factory(angular);
-  }
-}(window.angular || null, function(angular) {
+(function(angular) {
 
   /**
    * @ngdoc module
@@ -54,4 +46,4 @@
 
   return ngClickSelect;
 
-}));
+})(window.angular);
